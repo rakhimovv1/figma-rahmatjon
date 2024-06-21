@@ -1,0 +1,244 @@
+ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+nav{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+nav label {
+    color: #fff;
+    font-size: 35px;
+    line-height: 80px;
+    font-weight: 800;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+a{
+    text-decoration: none;
+    color: #274C5B;
+}
+nav ul li a {
+    color: #2c2a2a;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+    transition: 0.5s;
+  }
+  
+  a:hover {
+    background-color: rgb(13, 198, 41);
+  }
+  
+  .checkbtn {
+    color: #1b1a1a;
+    float: right;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  #check {
+    display: none;
+  }
+@media (max-width: 900px) {
+    .checkbtn {
+      display: block;
+    }
+    ul {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background-color: rgb(16, 132, 249);
+      top: 80px;
+      text-align: center;
+      transition: all 0.5s;
+      right: -100%;
+    }
+  
+    nav ul li {
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    #check:checked ~ ul {
+      right: 0;
+    }
+  }
+header{
+    background: url(rasm3.png) no-repeat center center/cover;
+    width: 100%;
+    height: 450px;
+}
+.r-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 0;
+    img{
+        width: 100%;
+        height: 500px;
+        object-fit: contain;
+    }
+}
+.sec1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 0;
+    img{
+        width: 100%;
+        height: 500px;
+        object-fit: contain;
+    }
+}
+@media (max-width: 950px) {
+    .sec1{
+      flex-direction: column;
+      justify-content: center;
+      padding: 30px 0;
+      gap: 20px;
+    }
+    .img{
+      text-align: center;
+    }
+}
+@media (max-width: 950px) {
+    .r-main{
+      flex-direction: column;
+      justify-content: center;
+      padding: 30px 0;
+      gap: 20px;
+    }
+    .img{
+      text-align: center;
+    }
+}
+.container1{
+    width: 95%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    padding: 60px 0;
+    border-radius: 30px;
+}
+.card1{
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 60px 30px;
+    img{
+        width: 95px;
+        height: 95px;
+    }
+    h1{
+        font-size: 25px;
+        color: #274C5B;
+        padding: 20px 0;
+    }
+    p{
+        font-size: 18px;
+        color: #525C60;
+    }
+}
+@media (max-width:950px) {
+    .cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+.txt{
+    text-align: center;
+    h1{
+        padding: 20px 0;
+        font-size: 50px;
+        color: #274C5B;
+    }
+    p{
+        font-size: 18px;
+        color: #525C60;
+    }
+}
+.img{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    padding: 60px 0;
+    img{
+        width: 100%;
+    }
+}
+aside{
+    padding: 60px 0;
+    background-color: #274C5B;
+    .box{
+        margin-top: 100px;
+        text-align: center;
+        h1{
+            font-size: 50px;
+            color: #fff;
+        }
+    }
+    .cardw{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 30px;
+        padding: 60px 0;
+       .card{
+        text-align: center;
+        width: 100%;
+        img{
+            width: 100%;
+        }
+       }
+        p{
+            color: #fff;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    }
+}
+.imag{
+    width: 100%;
+    height: 323px;
+    margin: 40px 0;
+}
+.col{
+    display: flex;
+    text-align: center;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    padding: 60px 0;
+    margin: 0 150px;
+    m-main{
+        text-align: center;
+        width: 100%;
+    }
+}
+@media (max-width:950) {
+    .col{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .m-main{
+        text-align: center;
+    }
+}
